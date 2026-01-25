@@ -1,0 +1,18 @@
+HTTrack3.49-6 launched on Sun, 25 Jan 2026 12:24:42 at https://jumptask.io/
+(httrack https://jumptask.io/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:28:32	Error: 	"Not Found" (404) at link https://jumptask.io/cdn-cgi/l/email-protection (from https://jumptask.io/contact-us/)
+12:33:10	Warning: 	Moved Permanently for https://jumptask.io/blog/sites-like-swagbucks/
+12:33:10	Warning: 	File has moved from https://jumptask.io/blog/sites-like-swagbucks/ to /blog/apps-like-swagbucks/
+12:33:38	Warning: 	Moved Permanently for https://jumptask.io/blog/how-to-become-a-paid-product-tester/
+12:33:38	Warning: 	File has moved from https://jumptask.io/blog/how-to-become-a-paid-product-tester/ to /blog/how-to-become-a-product-tester/
+12:33:39	Warning: 	Moved Permanently for https://jumptask.io/blog/how-to-make-money-on-twitter/
+12:33:39	Warning: 	File has moved from https://jumptask.io/blog/how-to-make-money-on-twitter/ to /blog/how-to-make-money-on-x/
+
+HTTrack Website Copier/3.49-6 mirror complete in 9 minutes 2 seconds : 403 links scanned, 398 files written (92578856 bytes overall) [26928719 bytes received at 49683 bytes/sec], 79834914 bytes transferred using HTTP compression in 232 files, ratio 17%, 31.0 requests per connection
+(1 errors, 6 warnings, 0 messages)
