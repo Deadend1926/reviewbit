@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/jumptask.io/$1"
+    }
+  ],
+  "trailingSlash": true
+}
