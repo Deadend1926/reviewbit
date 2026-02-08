@@ -3,7 +3,16 @@
     "allow": [
       "Bash(grep:*)",
       "Bash(powershell:*)",
-      "WebFetch(domain:webassets-wordpress-prod.jumptask.io)"
+      "WebFetch(domain:webassets-wordpress-prod.jumptask.io)",
+      "Bash(git ls-tree:*)",
+      "Bash(for page in about-us become-a-partner blog buy-twitter-followers buy-website-traffic buy-youtube-likes contact-form contact-us free-money-in-seconds get-paid-play-games get-paid-take-surveys get-paid-to-download-apps get-paid-to-test-products get-paid-to-train-ai get-paid-to-translate-online get-paid-to-watch-videos get-paid-watch-ads how-does-jumptask-work is-jumptask-legit jmpt-token jumptask-microtasks litepaper money-earning-app privacy-policy reviews sell-internet-data social-media-tasks task-earning-app user-agreement)",
+      "Bash(do)",
+      "Bash(if [ ! -f \"/Users/santosh/Desktop/Codes/jumptest_io/jumptask.io/$page/index.html\" ])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(find:*)"
     ]
   }
 }

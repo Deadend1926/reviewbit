@@ -29,6 +29,7 @@
   width: 20px;
   height: 20px;
   transition: transform 0.2s ease;
+  fill: #3ac078;
 }
 .nav-dropdown:hover .nav-dropdown-btn svg {
   transform: rotate(180deg);
@@ -68,6 +69,7 @@
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(52%) saturate(522%) hue-rotate(107deg) brightness(94%) contrast(87%);
 }
 .nav-dropdown-content .menu-item-text {
   display: flex;
@@ -807,7 +809,8 @@ img {
   height: 20px;
   transition: transform 0.25s ease;
   flex-shrink: 0;
-  color: rgba(0, 0, 0, 0.54);
+  color: #3ac078;
+  fill: #3ac078;
 }
 .mobile-nav-section.expanded .mobile-nav-section-header svg {
   transform: rotate(180deg);
@@ -846,6 +849,7 @@ img {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(52%) saturate(522%) hue-rotate(107deg) brightness(94%) contrast(87%);
 }
 .mobile-nav-section-links .mobile-link-text {
   display: flex;
@@ -855,6 +859,7 @@ img {
 .mobile-nav-section-links .mobile-link-title {
   font-weight: 600;
   font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.87);
 }
 .mobile-nav-section-links .mobile-link-desc {
   font-size: 0.8rem;
