@@ -364,17 +364,17 @@ document.addEventListener('DOMContentLoaded', function() {
       {
         title: 'RESOURCES',
         links: [
-          { text: 'Blog', href: 'blog/index.html' },
-          { text: 'Help', href: 'https://support.jumptask.io/hc/en-gb', external: true },
-          { text: 'Litepaper', href: 'litepaper/index.html' },
-          { text: 'Whitepaper', href: 'https://docs.jumptask.io/whitepaper/jumptask-whitepaper', external: true },
-          { text: 'Audit', href: 'https://github.com/Quillhash/QuillAudit_Reports/blob/master/JumpToken%20Audit%20Report%20-%20QuillAudits.pdf', external: true }
+          { text: 'Blog', href: '#' },
+          { text: 'Help', href: '#' },
+          { text: 'Litepaper', href: '#' },
+          { text: 'Whitepaper', href: '#' },
+          { text: 'Audit', href: '#' }
         ]
       },
       {
         title: 'FOR BUSINESS',
         links: [
-          { text: 'Advertise with us', href: 'https://acquirox.com/', external: true },
+          { text: 'Advertise with us', href: '#' },
           { text: 'Get website traffic', href: 'buy-website-traffic/index.html' },
           { text: 'Get X followers', href: 'buy-twitter-followers/index.html' },
           { text: 'Get YouTube likes', href: 'buy-youtube-likes/index.html' },
@@ -457,4 +457,49 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   fixFooter();
+
+  // ===== MUI FLOATING LABEL FIX =====
+  // The static export has no CSS for the shrunk label state and no JS to
+  // toggle it. We inject the missing CSS and wire up focus/blur events.
+  function fixMuiFloatingLabels() {
+    // Inject the missing shrunk-label CSS once
+    var style = document.createElement('style');
+    style.textContent = [
+      'label.MuiInputLabel-shrink {',
+      '  transform: translate(14px, -9px) scale(0.75) !important;',
+      '  max-width: calc(133% - 32px) !important;',
+      '}',
+      'label.MuiInputLabel-shrink.Mui-focused { color: #416ef0; }'
+    ].join('\n');
+    document.head.appendChild(style);
+
+    document.querySelectorAll('.MuiFormControl-root').forEach(function(fc) {
+      var label  = fc.querySelector('.MuiInputLabel-root');
+      var input  = fc.querySelector('.MuiInputBase-input');
+      var legend = fc.querySelector('legend');
+      if (!label || !input) return;
+
+      function shrink() {
+        label.setAttribute('data-shrink', 'true');
+        label.classList.add('MuiInputLabel-shrink');
+        if (legend) legend.style.maxWidth = '100%';
+      }
+
+      function unshrink() {
+        label.setAttribute('data-shrink', 'false');
+        label.classList.remove('MuiInputLabel-shrink');
+        if (legend) legend.style.maxWidth = '0.01px';
+      }
+
+      // Initial state for pre-filled fields
+      if (input.value.length > 0) { shrink(); }
+
+      input.addEventListener('focus', shrink);
+      input.addEventListener('blur',  function() {
+        if (input.value.length === 0) unshrink();
+      });
+    });
+  }
+
+  fixMuiFloatingLabels();
 });
