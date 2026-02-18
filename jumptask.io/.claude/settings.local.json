@@ -12,7 +12,9 @@
       "Bash(py:*)",
       "Bash(python3.exe:*)",
       "Bash(where:*)",
-      "Bash(ls \"C:\\\\Users\\\\rites\\\\Downloads\\\\code\\\\WithSantosh\\\\ReviewBit\\\\jumptest_io\\\\jumptask.io\\\\_next\\\\image\"\" | grep -i \"Group-3465682\" 2>/dev/null || echo \"NOT FOUND \")"
+      "Bash(ls \"C:\\\\Users\\\\rites\\\\Downloads\\\\code\\\\WithSantosh\\\\ReviewBit\\\\jumptest_io\\\\jumptask.io\\\\_next\\\\image\"\" | grep -i \"Group-3465682\" 2>/dev/null || echo \"NOT FOUND \")",
+      "Bash(dir:*)",
+      "Bash(cmd /c \"dir /b \"\"C:\\\\Users\\\\rites\\\\Downloads\\\\code\\\\WithSantosh\\\\ReviewBit\\\\jumptest_io\\\\jumptask.io\\\\_next\\\\image\"\"\")"
     ]
   }
 }
