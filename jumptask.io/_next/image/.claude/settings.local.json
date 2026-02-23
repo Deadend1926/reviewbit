@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(powershell:*)",
+      "Bash(copy index0199.html test_check.png)",
+      "Bash(cmd /c \"copy index0199.html test_check.png && dir test_check.png\")",
+      "Bash(cmd /c \"type index0199.html\")",
+      "Bash(ls:*)"
+    ]
+  }
+}
